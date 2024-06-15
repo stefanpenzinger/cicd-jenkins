@@ -9,4 +9,10 @@ class MainTest {
         Main main = new Main();
         assertEquals("Hello world!", main.getHello());
     }
+
+    @Test
+    void testDoesThisTriggerThePipeline() {
+        Main main = new Main();
+        assertEquals("Hello world!", main.getHello());
+    }
 }
