@@ -1,14 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        // Define your environment variables
-        DOCKER_CREDENTIALS_ID = 'docker-hub-credentials' // Docker Hub credentials ID
-        DOCKER_IMAGE = "gespenzt/cicd-jenkins"
-        K8S_NAMESPACE = "cicd-jenkins"
-        K8S_CREDENTIALS_ID = 'k8s-credentials'
-    }
-
     stages {
         stage('Checkout') {
             steps {
@@ -28,13 +20,13 @@ pipeline {
                 sh './gradlew test'
             }
         }
-        stage('Build Docker Image') {
+        stage('Deploy Docker Image') {
             steps {
                 script {
-                    docker.withRegistry('', DOCKER_CREDENTIALS_ID) {
-                        def customImage = docker.build(DOCKER_IMAGE)
-                        customImage.push("latest")
+                    withCredentials([string(credentialsId: 'dockerhub-secret', variable: 'dockerhubpwd')]) {
+                        sh 'docker login -u gespenzt -p ${dockerhubpwd}'
                     }
+                    sh 'docker push gespenzt/cicd-jenkins:latest'
                 }
             }
         }
