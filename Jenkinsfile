@@ -1,10 +1,13 @@
 pipeline {
     agent any
 
+    environment {
+        DOCKER_IMAGE_NAME = 'gespenzt/cicd-jenkins'
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                // Checkout the code from GitHub
                 git branch: 'main', url: 'https://github.com/stefanpenzinger/cicd-jenkins.git'
             }
         }
@@ -20,13 +23,15 @@ pipeline {
                 sh './gradlew test'
             }
         }
-        stage('Deploy Docker Image') {
+        stage('Build Docker Image') {
             steps {
-                script {
-                    withCredentials([string(credentialsId: 'dockerhub-secret', variable: 'dockerhubpwd')]) {
-                        sh 'docker login -u gespenzt -p ${dockerhubpwd}'
-                    }
-                    sh 'docker push gespenzt/cicd-jenkins:latest'
+                docker.build("${env.DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER}")
+            }
+        }
+        stage('Push Docker Image') {
+            steps {
+                docker.withRegistry('docker.io', 'docker-hub-credentials') {
+                    docker.image("${env.DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER}").push()
                 }
             }
         }
@@ -37,14 +42,6 @@ pipeline {
                 }
             }
         }
-
-       /*  stage('Deploy to Kubernetes') {
-            steps {
-                script {
-                    kubernetesDeploy(configs: 'k8s/deployment.yaml', kubeConfig: [path: '/home/jenkins/.kube/config'])
-                }
-            }
-        } */
     }
 
     post {
