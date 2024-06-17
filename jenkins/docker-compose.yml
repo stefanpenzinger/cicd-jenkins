@@ -1,7 +1,7 @@
 services:
   jenkins-docker:
     image: docker:dind
-    container_name: jenkins-docker
+    container_name: docker
     privileged: true
     networks:
       - jenkins
