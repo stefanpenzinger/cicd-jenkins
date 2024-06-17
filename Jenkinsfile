@@ -25,7 +25,7 @@ pipeline {
         stage('Build Docker Image and push it') {
             steps {
                 script {
-                    docker.withRegistry('docker.io', 'docker-hub-credentials') {
+                    docker.withRegistry('', 'docker-hub-credentials') {
                         def customImage = docker.build("${env.DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER}")
                         customImage.push()
                     }
