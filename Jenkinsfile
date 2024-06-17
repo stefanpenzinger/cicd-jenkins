@@ -1,5 +1,5 @@
 pipeline {
-    agent { dockerfile true }
+    agent any
 
     environment {
         DOCKER_IMAGE_NAME = 'gespenzt/cicd-jenkins'
@@ -23,12 +23,11 @@ pipeline {
             }
         }
         stage('Build Docker Image and push it') {
-            steps {
-                script {
+            node {
+                checkout scm
+                docker.withRegistry('docker.io', 'docker-hub-credentials') {
                     def customImage = docker.build("${env.DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER}")
-                    docker.withRegistry('docker.io', 'docker-hub-credentials') {
-                        customImage.push()
-                    }
+                    customImage.push()
                 }
             }
         }
