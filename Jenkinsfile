@@ -32,6 +32,13 @@ pipeline {
                 }
             }
         }
+        stage('Deploy App on k8s') {
+            steps {
+                withCredentials([string(credentialsId: 'k8s-secret', variable: 'api_token')]) {
+                    sh 'kubectl --token $api_token --server http://192.168.49.2  --insecure-skip-tls-verify=true apply -f k8s/deployment.yaml '
+                }
+            }
+        }
     }
 
     post {
