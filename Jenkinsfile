@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('', 'docker-hub-credentials') {
-                        def customImage = docker.build("${env.DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER}")
+                        def customImage = docker.build("${env.DOCKER_IMAGE_NAME}:latest")
                         customImage.push()
                     }
                 }
@@ -34,9 +34,7 @@ pipeline {
         }
         stage('Deploy App on k8s') {
             steps {
-                withCredentials([string(credentialsId: 'k8s-secret', variable: 'api_token')]) {
-                    sh 'kubectl --token $api_token --server http://192.168.49.2  --insecure-skip-tls-verify=true apply -f k8s/deployment.yaml '
-                }
+                kubernetesDeploy(configs: "deployment.yaml", "k8s/service.yaml")
             }
         }
     }
