@@ -34,7 +34,9 @@ pipeline {
         }
         stage('Deploy App on k8s') {
             steps {
-                kubernetesDeploy(configs: "deployment.yaml", "k8s/service.yaml")
+                script {
+                    kubernetesDeploy(configs: "deployment.yaml", "k8s/service.yaml")
+                }
             }
         }
     }
