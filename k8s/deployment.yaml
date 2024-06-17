@@ -17,4 +17,4 @@ spec:
       - name: hello-world-spring
         image: gespenzt/cicd-jenkins:latest
         ports:
-        - containerPort: 5000
+        - containerPort: 8888
