@@ -5,6 +5,10 @@ pipeline {
         DOCKER_IMAGE_NAME = 'gespenzt/cicd-jenkins'
     }
 
+    tools {
+        go '1.22.2'
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -13,13 +17,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './gradlew clean build'
+                sh 'go build -v'
             }
         }
         stage('Test') {
             steps {
-                // Run Gradle tests
-                sh './gradlew test'
+                sh 'go test -v'
             }
         }
         stage('Build Docker Image and push it') {

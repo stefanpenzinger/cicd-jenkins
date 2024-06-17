@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0010ccad-1dff-4ba8-a7fc-8366d2aa6489" name="Changes" comment="Remove namespace">
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/Jenkins-Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cicd/HelloWorldController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cicd/HelloWorldSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HelloWorldControllerTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cicd-jenkins" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cicd-jenkins" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cicd-jenkins" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Dockerfile" />
+        <option value="Kubernetes Service" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.22.2" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;stefanpenzinger&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:stefanpenzinger/cicd-jenkins.git&quot;,
+    &quot;accountId&quot;: &quot;aaa0f765-c204-41a6-b312-ee6497928f96&quot;
+  }
+}</component>
+  <component name="Jenkins.Settings">
+    <option name="jenkinsUrl" value="http://localhost:8082/" />
+    <option name="lastSelectedView" value="all" />
+    <option name="username" value="gespenzt" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2huvmZnQXwoNnsHQIzjDYy6lqty" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build cicd-jenkins.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HelloWorldControllerTest.testHello.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.cicd-jenkins [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.cicd-jenkins [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.cicd-jenkins [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.cicd-jenkins [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.cicd-jenkins [testClasses].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.HelloWorldSpring.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/penz/Workspace/Private/cicd-jenkins&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.456057&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.codinjutsu.tools.jenkins.servers&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;/home/penz/.gradle&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/k8s" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jenkins" />
+      <recent name="$PROJECT_DIR$/k8s" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="cicd-jenkins [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="cicd-jenkins [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="cicd-jenkins [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="cicd-jenkins [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="HelloWorldSpring" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cicd-jenkins.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cicd.HelloWorldSpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cicd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-33c477a475b1-e0158606a674-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-241.17890.21" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-GO-241.17890.21" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0010ccad-1dff-4ba8-a7fc-8366d2aa6489" name="Changes" comment="" />
+      <created>1718456936963</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718456936963</updated>
+      <workItem from="1718456938021" duration="8363000" />
+      <workItem from="1718615274127" duration="19663000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init commit">
+      <option name="closed" value="true" />
+      <created>1718457785945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718457785945</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Init commit">
+      <option name="closed" value="true" />
+      <created>1718457806646</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718457806646</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add k8s files">
+      <option name="closed" value="true" />
+      <created>1718463090446</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718463090446</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update Jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1718463132467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718463132467</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add test">
+      <option name="closed" value="true" />
+      <created>1718463321862</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718463321862</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Revert last change">
+      <option name="closed" value="true" />
+      <created>1718463772152</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718463772152</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix typo">
+      <option name="closed" value="true" />
+      <created>1718464153193</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718464153193</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update Jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1718464844565</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718464844565</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update project to use spring">
+      <option name="closed" value="true" />
+      <created>1718617624546</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718617624546</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update Jenkinsfile to use docker">
+      <option name="closed" value="true" />
+      <created>1718617655294</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718617655294</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update Jenkinsfile to use dockerfile">
+      <option name="closed" value="true" />
+      <created>1718617802380</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718617802380</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update Jenkinsfile to use dockerfile">
+      <option name="closed" value="true" />
+      <created>1718617924121</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718617924121</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Use script block in jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1718618256051</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718618256051</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Use node block in jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1718618598782</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1718618598782</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Use node block in jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1718618661577</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1718618661577</updated>
+    </task>
+    <task id="LOCAL-00016" summary="revert to script block in jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1718618813766</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1718618813766</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Use default registry">
+      <option name="closed" value="true" />
+      <created>1718618908040</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1718618908040</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add Dockerfile and docker-compose.yml for jenkins">
+      <option name="closed" value="true" />
+      <created>1718620954532</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1718620954532</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fix typo in container name">
+      <option name="closed" value="true" />
+      <created>1718621598709</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1718621598709</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add deployment to k8s to Jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1718622290576</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1718622290576</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Split up k8s file to deployment and service">
+      <option name="closed" value="true" />
+      <created>1718622557229</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1718622557229</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Split up k8s file to deployment and service">
+      <option name="closed" value="true" />
+      <created>1718623014507</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1718623014507</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add missing script block">
+      <option name="closed" value="true" />
+      <created>1718623715592</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1718623715592</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update Jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1718627139258</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1718627139258</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Update network to minikube in order to access cluster">
+      <option name="closed" value="true" />
+      <created>1718634033828</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1718634033828</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Update Jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1718634043556</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1718634043556</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add joined file for deployment and service">
+      <option name="closed" value="true" />
+      <created>1718634282595</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1718634282595</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Update kubeconfigId">
+      <option name="closed" value="true" />
+      <created>1718634523402</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1718634523402</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Remove namespace">
+      <option name="closed" value="true" />
+      <created>1718635463428</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1718635463428</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit" />
+    <MESSAGE value="Add k8s files" />
+    <MESSAGE value="Add test" />
+    <MESSAGE value="Revert last change" />
+    <MESSAGE value="Fix typo" />
+    <MESSAGE value="Update project to use spring" />
+    <MESSAGE value="Update Jenkinsfile to use docker" />
+    <MESSAGE value="Update Jenkinsfile to use dockerfile" />
+    <MESSAGE value="Use script block in jenkinsfile" />
+    <MESSAGE value="Use node block in jenkinsfile" />
+    <MESSAGE value="revert to script block in jenkinsfile" />
+    <MESSAGE value="Use default registry" />
+    <MESSAGE value="Add Dockerfile and docker-compose.yml for jenkins" />
+    <MESSAGE value="Fix typo in container name" />
+    <MESSAGE value="Add deployment to k8s to Jenkinsfile" />
+    <MESSAGE value="Split up k8s file to deployment and service" />
+    <MESSAGE value="Add missing script block" />
+    <MESSAGE value="Update network to minikube in order to access cluster" />
+    <MESSAGE value="Update Jenkinsfile" />
+    <MESSAGE value="Add joined file for deployment and service" />
+    <MESSAGE value="Update kubeconfigId" />
+    <MESSAGE value="Remove namespace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove namespace" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
