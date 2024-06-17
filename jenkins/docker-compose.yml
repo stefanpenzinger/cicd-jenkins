@@ -4,7 +4,7 @@ services:
     container_name: docker
     privileged: true
     networks:
-      - jenkins
+      - minikube
     environment:
       DOCKER_TLS_CERTDIR: /certs
     volumes:
@@ -20,7 +20,7 @@ services:
     container_name: jenkins-blueocean
     restart: on-failure
     networks:
-      - jenkins
+      - minikube
     environment:
       DOCKER_HOST: tcp://docker:2376
       DOCKER_CERT_PATH: /certs/client
@@ -33,7 +33,9 @@ services:
       - "50000:50000"
 
 networks:
-  jenkins:
+  minikube:
+    external: true
+    name: minikube
 
 volumes:
   jenkins-docker-certs:
