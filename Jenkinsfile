@@ -18,15 +18,18 @@ pipeline {
         }
         stage('Test') {
             steps {
+                // Run Gradle tests
                 sh './gradlew test'
             }
         }
-        stage('Build Docker Image') {
-            docker.build("${env.DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER}")
-        }
-        stage('Push Docker Image') {
-            docker.withRegistry('docker.io', 'docker-hub-credentials') {
-                docker.image("${env.DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER}").push()
+        stage('Build Docker Image and push it') {
+            steps {
+                script {
+                    def customImage = docker.build("${env.DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER}")
+                    docker.withRegistry('docker.io', 'docker-hub-credentials') {
+                        customImage.push()
+                    }
+                }
             }
         }
         stage('Deploy App on k8s') {
