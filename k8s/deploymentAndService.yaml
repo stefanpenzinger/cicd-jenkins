@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-world-spring
-  namespace: cicd-jenkins
 spec:
   replicas: 1
   selector:
