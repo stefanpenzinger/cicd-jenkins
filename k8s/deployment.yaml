@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world-spring
+  name: go-app
   namespace: cicd-jenkins
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-world-spring
+      app: go-app
   template:
     metadata:
       labels:
-        app: hello-world-spring
+        app: go-app
     spec:
       containers:
-      - name: hello-world-spring
+      - name: go-app
         image: gespenzt/cicd-jenkins:latest
         ports:
-        - containerPort: 8888
+        - containerPort: 8080
