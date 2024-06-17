@@ -23,11 +23,13 @@ pipeline {
             }
         }
         stage('Build Docker Image and push it') {
-            node {
-                checkout scm
-                docker.withRegistry('docker.io', 'docker-hub-credentials') {
-                    def customImage = docker.build("${env.DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER}")
-                    customImage.push()
+            steps {
+                node {
+                    checkout scm
+                    docker.withRegistry('docker.io', 'docker-hub-credentials') {
+                        def customImage = docker.build("${env.DOCKER_IMAGE_NAME}:${env.BUILD_NUMBER}")
+                        customImage.push()
+                    }
                 }
             }
         }
