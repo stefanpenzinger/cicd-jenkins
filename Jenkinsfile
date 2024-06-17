@@ -35,10 +35,7 @@ pipeline {
         stage('Deploy App on k8s') {
             steps {
                 script {
-                    withCredentials([string(credentialsId: 'k8s-secret', variable: 'TOKEN')]) {
-                        sh 'kubectl --token $TOKEN --server http://192.168.49.2  --insecure-skip-tls-verify=true apply -f k8s/deployment.yaml '
-                        sh 'kubectl --token $TOKEN --server http://192.168.49.2  --insecure-skip-tls-verify=true apply -f k8s/service.yaml '
-                    }
+                    kubernetesDeploy(configs: "k8s/deployment.yaml", "k8s/service.yaml")
                 }
             }
         }
